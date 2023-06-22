@@ -54,4 +54,16 @@ a{
     background-image: url(./growcast-01.png);
     background-repeat: no-repeat;
     background-size: cover;
+    width: 1280px;
+    height: 720px;
+    
 }
+
+.empty{
+    height: 350px;
+}
+
+.txt{
+    font-size: 4rem;
+}
+
