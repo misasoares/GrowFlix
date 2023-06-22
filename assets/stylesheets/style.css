@@ -1,10 +1,18 @@
 .myBtn{
     background-color: red;
     color: white;
-    height: 60px;
-    width: 120px;
+    height: 70px;
+    width: 130px;
     border-radius: 5px;
     border: none;
+}
+a{
+   text-decoration: none;
+   color: white;
+}
+
+.myBtn:hover{
+    background-color: rgb(180, 0, 0);
 }
 
 .divHeader{
@@ -36,8 +44,14 @@
     color: white;
 }
 
-.header-img{
+.header-img-index{
     background-image: url(./banner-initial.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-img-home{
+    background-image: url(./growcast-01.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
