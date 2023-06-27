@@ -10,8 +10,10 @@ function renderGrowcast(){
     growCastmovies.forEach(item => {
         html += `
         <div class="col-3">
-            <div class="card" style="width: 18rem;">
-            <img src="${item.img}" class="card-img-top" alt="...">
+            <div class="" style="width: 18rem;">
+            <a href="${item.link}" target="_blank">
+    <img src="${item.img}" class="card-img-top" alt="...">
+  </a>
             
             </div>
         </div>
@@ -30,8 +32,10 @@ function renderWebinar(){
     webinarMovies.forEach(item => {
         html += `
         <div class="col-3">
-            <div class="card" style="width: 18rem;">
-            <img src="${item.img}" class="card-img-top" alt="...">
+            <div class="" style="width: 18rem;">
+            <a href="${item.link}" target="_blank">
+    <img src="${item.img}" class="card-img-top" alt="...">
+  </a>
             
             </div>
         </div>
@@ -50,9 +54,10 @@ function renderJornada(){
     jornadaMovies.forEach(item => {
         html += `
         <div class="col-3">
-        <div class="card" style="width: 18rem;">
-        <img src="${item.img}" class="card-img-top" alt="...">
-        
+        <div class="" style="width: 18rem;">
+        <a href="${item.link}" target="_blank">
+    <img src="${item.img}" class="card-img-top" alt="...">
+  </a>
         </div>
     </div>
         `
@@ -69,9 +74,11 @@ function renderDiversos(){
 
     diversosMovies.forEach(item => {
         html+= `
-        <div class="col-3">
-        <div class="card" style="width: 18rem;">
-        <img src="${item.img}" class="card-img-top" alt="...">
+        <div class="col-3" >
+        <div class="" style="width: 18rem;">
+        <a href="${item.link}" target="_blank">
+    <img src="${item.img}" class="card-img-top" alt="...">
+  </a>
        
         </div>
     </div>
