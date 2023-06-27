@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>GrowFlix</title>
+    <title>Growflix</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,7 +16,7 @@
 
 
   <body class="bg-black">
-    <header>
+    <header id="header">
             <div class="header-img-home">
               <nav class="navbar bg-transparent"></nav>
               <div class="container-fluid">
@@ -26,11 +26,11 @@
                     <a class="navbar-brand ms-4" href="./index.html">
                       <img src="./assets/img/logo-growflix.svg" alt="Bootstrap" width="120" height="90">
                     </a>
-                    <a href="" class="ms-3 text-white fs-4">Início</a>
-                    <a href="" class="ms-3 text-secondary fs-4">Growcast[episódios]</a>
-                    <a href="" class="ms-3 text-secondary fs-4">Webinar em Flutter</a>
-                    <a href="" class="ms-3 text-secondary fs-4">Jornada UX/UI</a>
-                    <a href="" class="ms-3 text-secondary fs-4">Diversos</a>
+                    <a href="#header" class="ms-3 text-white fs-4">Início</a>
+                    <a href="#growcast" class="ms-3 text-secondary fs-4">Growcast[episódios]</a>
+                    <a href="#webinar" class="ms-3 text-secondary fs-4">Webinar em Flutter</a>
+                    <a href="#jornada" class="ms-3 text-secondary fs-4">Jornada UX/UI</a>
+                    <a href="#diversos" class="ms-3 text-secondary fs-4">Diversos</a>
                   </nav>
                   </div>
                 </div>
@@ -49,18 +49,67 @@
               </div>
             </div>
             </div>
-        
-           
-
-            
-        
-        
-        
   </header>
 
 
-  <section>
+  <section id="growcast">
+    <div class="container">
+      <div class="row">
+        <div class="col mt-3 mb-3">
+          <a class="fs-4 fw-bold" href="#growcast">Growcast [Episódios] <i class="fa-solid fa-play"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row" id="growcastVideos">
+      </div>
+    </div>
+  </section>
 
+  <section id="webinar">
+    <div class="container">
+      <div class="row">
+        <div class="col mt-3 mb-3">
+          <a class="fs-4 fw-bold" href="#webinar">Webinar em Flutter <i class="fa-solid fa-play"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row" id="webinarVideos">
+      </div>
+    </div>
+  </section>
+
+  <section id="jornada">
+    <div class="container">
+      <div class="row">
+        <div class="col mt-3 mb-3">
+          <a class="fs-4 fw-bold" href="#jornada">Jornada UX/UI <i class="fa-solid fa-play"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row" id="jornadaVideos">
+      </div>
+    </div>
+  </section>
+
+  <section id="diversos">
+    <div class="container">
+      <div class="row">
+        <div class="col mt-3 mb-3">
+          <a class="fs-4 fw-bold" href="#diversos">Diversos <i class="fa-solid fa-play"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row" id="diversosVideos">
+      </div>
+    </div>
   </section>
 
 
@@ -111,16 +160,10 @@
         
       </footer>
 
-  
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
-    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
-    crossorigin="anonymous"
-  ></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+  <script src="./assets/js/data.js"></script>
+  <script src="./assets/js/movies.js"></script>
   </body>
