@@ -9,7 +9,7 @@ function renderGrowcast(){
 
     growCastmovies.forEach(item => {
         html += `
-        <div class="col-3">
+        <div class="col-12">
             <div class="" style="width: 18rem;">
             <a href="${item.link}" target="_blank">
     <img src="${item.img}" class="card-img-top" alt="...">
@@ -31,7 +31,7 @@ function renderWebinar(){
 
     webinarMovies.forEach(item => {
         html += `
-        <div class="col-3">
+        <div class="col-12">
             <div class="" style="width: 18rem;">
             <a href="${item.link}" target="_blank">
     <img src="${item.img}" class="card-img-top" alt="...">
@@ -53,7 +53,7 @@ function renderJornada(){
 
     jornadaMovies.forEach(item => {
         html += `
-        <div class="col-3">
+        <div class="col-12">
         <div class="" style="width: 18rem;">
         <a href="${item.link}" target="_blank">
     <img src="${item.img}" class="card-img-top" alt="...">
