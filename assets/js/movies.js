@@ -9,10 +9,10 @@ function renderGrowcast(){
 
     growCastmovies.forEach(item => {
         html += `
-        <div class="col-12 col-md-3 ">
+        <div class="col-12 col-md-3 d-flex justify-content-center">
             <div class="image m-2" style="width: 19rem;height:13rem">
-                <img src="${item.img}" class="card-img-top"  alt="...">    
-                    <p class="fs-6 bg-black text-light titleHiden mt-1 mb-1"><a href="${item.link}" target="blank" class=""> <i class="fa-regular fa-circle-play fs-2"></i> </a>${item.title}</p>
+                <img src="${item.img}" class="card-img-top "  alt="...">    
+                    <p class="fs-6 bg-black text-light titleHiden"><a href="${item.link}" target="blank" class="mt-1 mb-1"> <i class="fa-regular fa-circle-play fs-2"></i> </a>${item.title}</p>
             </div>
         </div>
         `
@@ -29,10 +29,10 @@ function renderWebinar(){
 
     webinarMovies.forEach(item => {
         html += `
-        <div class="col-12 col-md-3 ">
-            <div class="image" style="width: 18rem;">
-                <img src="${item.img}" class="card-img-top"  alt="...">    
-                    <p class="fs-6 text-light titleHiden"><a href="${item.link}" target="blank" class=""> <i class="fa-regular fa-circle-play fs-2"></i> </a>${item.title}</p>
+        <div class="col-12 col-md-3 d-flex justify-content-center">
+            <div class="image m-2" style="width: 19rem;height:13rem">
+                <img src="${item.img}" class="card-img-top "  alt="...">    
+                    <p class="fs-6 bg-black text-light titleHiden"><a href="${item.link}" target="blank" class="mt-1 mb-1"> <i class="fa-regular fa-circle-play fs-2"></i> </a>${item.title}</p>
             </div>
         </div>
         `
@@ -49,10 +49,10 @@ function renderJornada(){
 
     jornadaMovies.forEach(item => {
         html += `
-        <div class="col-12 col-md-3 ">
-            <div class="image" style="width: 18rem;">
-                <img src="${item.img}" class="card-img-top"  alt="...">    
-                    <p class="fs-6 text-light titleHiden"><a href="${item.link}" target="blank" class=""> <i class="fa-regular fa-circle-play fs-2"></i> </a>${item.title}</p>
+        <div class="col-12 col-md-3 d-flex justify-content-center">
+            <div class="image m-2" style="width: 19rem;height:13rem">
+                <img src="${item.img}" class="card-img-top "  alt="...">    
+                    <p class="fs-6 bg-black text-light titleHiden"><a href="${item.link}" target="blank" class="mt-1 mb-1"> <i class="fa-regular fa-circle-play fs-2"></i> </a>${item.title}</p>
             </div>
         </div>
         `
@@ -69,10 +69,10 @@ function renderDiversos(){
 
     diversosMovies.forEach(item => {
         html+= `
-        <div class="col-12 col-md-3 ">
-            <div class="image" style="width: 18rem;">
-                <img src="${item.img}" class="card-img-top"  alt="...">    
-                    <p class="fs-6 text-light titleHiden"><a href="${item.link}" target="blank" class=""> <i class="fa-regular fa-circle-play fs-2"></i> </a>${item.title}</p>
+        <div class="col-12 col-md-3 d-flex justify-content-center">
+            <div class="image m-2" style="width: 19rem;height:13rem">
+                <img src="${item.img}" class="card-img-top "  alt="...">    
+                    <p class="fs-6 bg-black text-light titleHiden"><a href="${item.link}" target="blank" class="mt-1 mb-1"> <i class="fa-regular fa-circle-play fs-2"></i> </a>${item.title}</p>
             </div>
         </div>
         `
