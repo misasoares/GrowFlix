@@ -9,12 +9,10 @@ function renderGrowcast(){
 
     growCastmovies.forEach(item => {
         html += `
-        <div class="col-12">
-            <div class="" style="width: 18rem;">
-            <a href="${item.link}" target="_blank">
-    <img src="${item.img}" class="card-img-top" alt="...">
-  </a>
-            
+        <div class="col-12 col-md-3 ">
+            <div class="image m-2" style="width: 19rem;height:13rem">
+                <img src="${item.img}" class="card-img-top"  alt="...">    
+                    <p class="fs-6 bg-black text-light titleHiden mt-1 mb-1"><a href="${item.link}" target="blank" class=""> <i class="fa-regular fa-circle-play fs-2"></i> </a>${item.title}</p>
             </div>
         </div>
         `
@@ -31,12 +29,10 @@ function renderWebinar(){
 
     webinarMovies.forEach(item => {
         html += `
-        <div class="col-12">
-            <div class="" style="width: 18rem;">
-            <a href="${item.link}" target="_blank">
-    <img src="${item.img}" class="card-img-top" alt="...">
-  </a>
-            
+        <div class="col-12 col-md-3 ">
+            <div class="image" style="width: 18rem;">
+                <img src="${item.img}" class="card-img-top"  alt="...">    
+                    <p class="fs-6 text-light titleHiden"><a href="${item.link}" target="blank" class=""> <i class="fa-regular fa-circle-play fs-2"></i> </a>${item.title}</p>
             </div>
         </div>
         `
@@ -53,13 +49,12 @@ function renderJornada(){
 
     jornadaMovies.forEach(item => {
         html += `
-        <div class="col-12">
-        <div class="" style="width: 18rem;">
-        <a href="${item.link}" target="_blank">
-    <img src="${item.img}" class="card-img-top" alt="...">
-  </a>
+        <div class="col-12 col-md-3 ">
+            <div class="image" style="width: 18rem;">
+                <img src="${item.img}" class="card-img-top"  alt="...">    
+                    <p class="fs-6 text-light titleHiden"><a href="${item.link}" target="blank" class=""> <i class="fa-regular fa-circle-play fs-2"></i> </a>${item.title}</p>
+            </div>
         </div>
-    </div>
         `
     })
 
@@ -74,17 +69,19 @@ function renderDiversos(){
 
     diversosMovies.forEach(item => {
         html+= `
-        <div class="col-3" >
-        <div class="" style="width: 18rem;">
-        <a href="${item.link}" target="_blank">
-    <img src="${item.img}" class="card-img-top" alt="...">
-  </a>
-       
+        <div class="col-12 col-md-3 ">
+            <div class="image" style="width: 18rem;">
+                <img src="${item.img}" class="card-img-top"  alt="...">    
+                    <p class="fs-6 text-light titleHiden"><a href="${item.link}" target="blank" class=""> <i class="fa-regular fa-circle-play fs-2"></i> </a>${item.title}</p>
+            </div>
         </div>
-    </div>
         `
     })
 
     diversosVideos.innerHTML = html
 }
 renderDiversos()
+
+
+
+// fazer função que ativa quando passa o mouse 

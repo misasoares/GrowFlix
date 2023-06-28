@@ -71,3 +71,11 @@ a:hover{
     font-size: 4rem;
 }
 
+
+.titleHiden{
+    display: none;
+}
+
+.title{
+    display: block;
+}
