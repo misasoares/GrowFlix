@@ -58,8 +58,9 @@ a:hover{
     background-image: url(./growcast-01.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1280px;
-    height: 720px;
+    /* width: 1280px;
+    height: 720px; */
+    
     
 }
 
