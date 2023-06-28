@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 .myBtn{
     background-color: red;
     color: white;
@@ -12,7 +15,7 @@ a{
 }
 
 a:hover{
-    transform: scale(1.5);
+    transform: scale(1.1);
 }
 
 .myBtn:hover{
@@ -65,7 +68,7 @@ a:hover{
 }
 
 .empty{
-    height: 350px;
+    height: 590px;
 }
 
 .txt{
