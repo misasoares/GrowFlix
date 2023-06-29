@@ -83,3 +83,24 @@ a:hover{
 .title{
     display: block;
 }
+
+.accordion-button::after{
+    background-image: url(./add.svg);
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image: url(./add.svg);
+}
+
+.modal{
+    --bs-modal-bg: none;
+    --bs-modal-header-border-color: none;
+}
+
+.btn-close{
+    filter: invert(1);
+}
+
+.card{
+    --bs-card-bg: none
+}

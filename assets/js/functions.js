@@ -1,13 +1,14 @@
 // Obtém todas as imagens dos cards
-var cardImages = document.querySelectorAll('.image');
+let cardImages = document.querySelectorAll('.card');
+
 
 
 cardImages.forEach(function(image) {
   
   image.addEventListener('mouseover', function() {
-    var parentDiv = image.parentNode;
+    let parentDiv = image.parentNode;
 
-    var paragraph = parentDiv.querySelector('p');
+    let paragraph = parentDiv.querySelector('p');
 
     paragraph.style.display = 'block';
     image.style.transform = 'scale(1.2)';
@@ -15,11 +16,19 @@ cardImages.forEach(function(image) {
 
   image.addEventListener('mouseout', function() {
   
-    var parentDiv = image.parentNode;
+    let parentDiv = image.parentNode;
 
-    var paragraph = parentDiv.querySelector('p');
+    let paragraph = parentDiv.querySelector('p');
+    
 
     paragraph.style.display = 'none';
     image.style.transform = 'scale(1)';
+    
+
   });
 });
+
+const movieModal = new bootstrap.Modal('#movieModal', {})
+
+
+

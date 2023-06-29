@@ -10,9 +10,10 @@ function renderGrowcast(){
     growCastmovies.forEach(item => {
         html += `
         <div class="col-12 col-md-3 d-flex justify-content-center">
-            <div class="image m-2" style="width: 19rem;height:13rem">
+            <div class="card m-2" ">
                 <img src="${item.img}" class="card-img-top "  alt="...">    
-                    <p class="fs-6 bg-black text-light titleHiden"><a href="${item.link}" target="blank" class="mt-1 mb-1"> <i class="fa-regular fa-circle-play fs-2"></i> </a>${item.title}</p>
+                    <p class="fs-6 bg-black text-light titleHiden">
+                    <button onclick="abrirMovieModal('${item.link}')" class="mt-1 mb-1"> <i class="fa-regular fa-circle-play fs-2"></i> </button>${item.title}</p>
             </div>
         </div>
         `
@@ -30,9 +31,10 @@ function renderWebinar(){
     webinarMovies.forEach(item => {
         html += `
         <div class="col-12 col-md-3 d-flex justify-content-center">
-            <div class="image m-2" style="width: 19rem;height:13rem">
+            <div class="card m-2" ">
                 <img src="${item.img}" class="card-img-top "  alt="...">    
-                    <p class="fs-6 bg-black text-light titleHiden"><a href="${item.link}" target="blank" class="mt-1 mb-1"> <i class="fa-regular fa-circle-play fs-2"></i> </a>${item.title}</p>
+                    <p class="fs-6 bg-black text-light titleHiden">
+                    <button onclick="abrirMovieModal('${item.link}')" class="mt-1 mb-1"> <i class="fa-regular fa-circle-play fs-2"></i> </button>${item.title}</p>
             </div>
         </div>
         `
@@ -50,9 +52,10 @@ function renderJornada(){
     jornadaMovies.forEach(item => {
         html += `
         <div class="col-12 col-md-3 d-flex justify-content-center">
-            <div class="image m-2" style="width: 19rem;height:13rem">
+            <div class="card m-2" ">
                 <img src="${item.img}" class="card-img-top "  alt="...">    
-                    <p class="fs-6 bg-black text-light titleHiden"><a href="${item.link}" target="blank" class="mt-1 mb-1"> <i class="fa-regular fa-circle-play fs-2"></i> </a>${item.title}</p>
+                    <p class="fs-6 bg-black text-light titleHiden">
+                    <button onclick="abrirMovieModal('${item.link}')" class="mt-1 mb-1"> <i class="fa-regular fa-circle-play fs-2"></i> </button>${item.title}</p>
             </div>
         </div>
         `
@@ -70,9 +73,10 @@ function renderDiversos(){
     diversosMovies.forEach(item => {
         html+= `
         <div class="col-12 col-md-3 d-flex justify-content-center">
-            <div class="image m-2" style="width: 19rem;height:13rem">
+            <div class="card m-2" ">
                 <img src="${item.img}" class="card-img-top "  alt="...">    
-                    <p class="fs-6 bg-black text-light titleHiden"><a href="${item.link}" target="blank" class="mt-1 mb-1"> <i class="fa-regular fa-circle-play fs-2"></i> </a>${item.title}</p>
+                    <p class="fs-6 bg-black text-light titleHiden">
+                    <button onclick="abrirMovieModal('${item.link}')" class="mt-1 mb-1"> <i class="fa-regular fa-circle-play fs-2"></i> </button>${item.title}</p>
             </div>
         </div>
         `
@@ -83,5 +87,14 @@ function renderDiversos(){
 renderDiversos()
 
 
+let movie = document.getElementById("bodyModal")
+let modalFrame = document.getElementById("movieSrc")
 
-// fazer função que ativa quando passa o mouse 
+function abrirMovieModal(item){
+
+    movieModal.show();
+    console.log(item)
+    modalFrame.setAttribute("src", `${item}`)
+    
+  }
+
