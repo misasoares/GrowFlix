@@ -104,3 +104,14 @@ a:hover{
 .card{
     --bs-card-bg: none
 }
+.card:hover{
+    position: absolute;
+    width: 350px;
+    z-index: 1;
+}
+.card-hover .card-body {
+    opacity: 1;
+  }
+.btn{
+    --bs-btn-color: ffffff;
+}

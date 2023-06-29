@@ -9,11 +9,11 @@ function renderGrowcast(){
 
     growCastmovies.forEach(item => {
         html += `
-        <div class="col-12 col-md-3 d-flex justify-content-center">
+        <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
             <div class="card m-2" ">
                 <img src="${item.img}" class="card-img-top "  alt="...">    
                     <p class="fs-6 bg-black text-light titleHiden">
-                    <button onclick="abrirMovieModal('${item.link}')" class="mt-1 mb-1"> <i class="fa-regular fa-circle-play fs-2"></i> </button>${item.title}</p>
+                    <button onclick="abrirMovieModal('${item.link}')" class="btn mt-1 mb-1"> <i class="fa-regular fa-circle-play fs-2"></i> </button>${item.title}</p>
             </div>
         </div>
         `
@@ -34,7 +34,7 @@ function renderWebinar(){
             <div class="card m-2" ">
                 <img src="${item.img}" class="card-img-top "  alt="...">    
                     <p class="fs-6 bg-black text-light titleHiden">
-                    <button onclick="abrirMovieModal('${item.link}')" class="mt-1 mb-1"> <i class="fa-regular fa-circle-play fs-2"></i> </button>${item.title}</p>
+                    <button onclick="abrirMovieModal('${item.link}')" class="btn mt-1 mb-1"> <i class="fa-regular fa-circle-play fs-2"></i> </button>${item.title}</p>
             </div>
         </div>
         `
@@ -55,7 +55,7 @@ function renderJornada(){
             <div class="card m-2" ">
                 <img src="${item.img}" class="card-img-top "  alt="...">    
                     <p class="fs-6 bg-black text-light titleHiden">
-                    <button onclick="abrirMovieModal('${item.link}')" class="mt-1 mb-1"> <i class="fa-regular fa-circle-play fs-2"></i> </button>${item.title}</p>
+                    <button onclick="abrirMovieModal('${item.link}')" class="btn mt-1 mb-1"> <i class="fa-regular fa-circle-play fs-2"></i> </button>${item.title}</p>
             </div>
         </div>
         `
@@ -76,7 +76,7 @@ function renderDiversos(){
             <div class="card m-2" ">
                 <img src="${item.img}" class="card-img-top "  alt="...">    
                     <p class="fs-6 bg-black text-light titleHiden">
-                    <button onclick="abrirMovieModal('${item.link}')" class="mt-1 mb-1"> <i class="fa-regular fa-circle-play fs-2"></i> </button>${item.title}</p>
+                    <button onclick="abrirMovieModal('${item.link}')" class="btn mt-1 mb-1"> <i class="fa-regular fa-circle-play fs-2"></i> </button>${item.title}</p>
             </div>
         </div>
         `
