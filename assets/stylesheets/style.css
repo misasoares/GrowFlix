@@ -106,7 +106,7 @@ a:hover{
 }
 .card:hover{
     position: absolute;
-    width: 350px;
+    width: 400px;
     z-index: 1;
 }
 .card-hover .card-body {
@@ -115,3 +115,4 @@ a:hover{
 .btn{
     --bs-btn-color: ffffff;
 }
+
